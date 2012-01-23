@@ -3,10 +3,6 @@ require 'spec_helper'
 describe PagesController do
   render_views
   
-  before(:each) do
-    @base_title = "Technology by Design"
-  end
-  
   describe "GET 'home'" do
     
     before(:each) do
@@ -18,7 +14,7 @@ describe PagesController do
     end
     
     it "should have the right title" do
-      response.should have_selector("title", :content => "#{base_title} | Home")
+      response.should have_selector("title", :content => "Technology by Design | Home")
     end
   end
   
@@ -33,7 +29,7 @@ describe PagesController do
     end
     
     it "should have the right title" do
-      response.should have_selector("title", :content => "#{base_title} | Services")
+      response.should have_selector("title", :content => "Technology by Design | Services")
     end
   end
   
@@ -48,7 +44,7 @@ describe PagesController do
     end
     
     it "should have the right title" do
-      response.should have_selector("title", :content => "#{base_title} | About")
+      response.should have_selector("title", :content => "Technology by Design | About")
     end
   end
   
@@ -63,7 +59,7 @@ describe PagesController do
     end
     
     it "should have the right title" do
-      response.should have_selector("title", :content => "#{base_title} | Contact")
+      response.should have_selector("title", :content => "Technology by Design | Contact")
     end
   end
   
@@ -78,7 +74,7 @@ describe PagesController do
     end
     
     it "should have the right title" do
-      response.should have_selector("title", :content => "#{base_title} | FAQ")
+      response.should have_selector("title", :content => "Technology by Design | FAQ")
     end
   end
   
@@ -93,7 +89,7 @@ describe PagesController do
     end
     
     it "should have the right title" do
-      response.should have_selector("title", :content => "#{base_title} | Testimonials")
+      response.should have_selector("title", :content => "Technology by Design | Testimonials")
     end
   end
 end
