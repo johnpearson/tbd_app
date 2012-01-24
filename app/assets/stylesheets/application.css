@@ -16,6 +16,24 @@ body {
 }
 
 .container {
-	width: 1000px;
-	height: 800px;
+	background-image: url("body_background.png");
+	background-repeat: no-repeat;
+	width: 840px;
+	height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Header Styling */
+.header {
+	width: 840px;
+	height: 200px;
+}
+
+.header tr td {
+	padding: 20px;
+}
+
+.header h3 {
+	text-align: center;
 }
